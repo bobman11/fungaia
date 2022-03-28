@@ -1,0 +1,61 @@
+// 
+// Xtreme Angular
+// 
+
+//(Required file)
+@import "variable";
+
+// Import Bootstrap source files (Required file)
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+//This is for the components (Required file)
+@import "core/core";
+@import "scafholdings";
+@import "components";
+
+//This is for the responsive (Required file)
+@import "responsive";
+
+//In This scss you can write your scss
+@import "custom";
+@import './custom-palettes';
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary: mat-palette($mat-green,900);
+  $accent: mat-palette($mat-grey,200);
+  $theme: mat-light-theme($primary, $accent);
+
+
+@include angular-material-theme($theme);
+
+
+/*
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+
+@import './assets/styles/app-color-palette';
+@import './assets/styles/app-theme';
+
+// Create the theme objects (a Sass map containing all of the palettes).
+$mat-light-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+$mat-dark-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
+
+// Load core styles which independant from theme
+// It should be included once
+@include app-style-core();
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+}
+
+.theme-dark {
+  @include app-theme($mat-dark-theme);
+}
+.theme-light {
+  @include app-theme($mat-light-theme);
+}
+*/
