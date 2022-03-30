@@ -1,0 +1,120 @@
+<div class="header header_azienda">
+    <div class="header-txt-container">
+        <div class="header-txt"> Azienda</div>
+    </div>
+    <div class="diagonal-header">
+        <div class="logo"></div>
+    </div>
+</div>
+<div class="card">
+    <div class="logo">
+        <img src="./assets/images/bg/logo.png">
+    </div>
+    <div class="">
+        <div class="horizontal">
+            <h4 class="card-subtitle text-muted" style="font-style: italic;">“Si sta imponendo sempre di più una visone
+                che vede Gaia (la terra vivente) come una comunità di
+                comunità ecologiche, legate tra loro in una grande rete, un network di relazioni simbiotiche e
+                mutualistiche, in cui ciascun individuo (umano o meno che sia) non può che esistere nel quadro di
+                rapporti e relazioni diffusi, secondo modelli di reciprocità complessa.”</h4>
+            <h4 style="text-align:right">da Beni comuni di Ugo Mattei (Laterza, 2011)</h4>
+            <button mat-stroked-button color="primary" (click)="goTo('about')">Compra da Fun-Gaia</button>
+        </div>
+
+        <div class="horizontal" style="background:#f5f5f5">
+            L'azienda Fun-Gaia è situata a Sarzana, nella Val di Magra, una terra al confine tra Liguria e Toscana, nel
+            Parco Naturale Regionale di Montemarcello.
+            La piana di Sarzana è stata ulìtilizzata storicamente per le attività agricole, in particolare per la
+            produzione
+            di frutta e ortaggi, vista la naturale fertilità del suolo e il microclima favorevole dovuto alla vicinanza
+            al
+            mare.
+            Oltre alla coltivazione di ortaggi, senza l'utilizzo di prodotti di sintesi, nel rispetto dell'ambiente,
+            l'Azienda
+            si occupa della produzione di funghi coltivati e della raccolta di funghi spontanei.
+        </div>
+        <div class="horizontal" style="line-height: 2">
+            <div class="padding-text">
+                <div>L&#39;attività nasce da un desiderio di vita semplice,
+                    all&#39;aria
+                    aperta e in aperta
+                    opposizione a un
+                    mondo
+                    del lavoro che tende a risucchiarci e farci perdere il contatto con noi stessi,
+                    allontanandoci
+                    dalle
+                    necessità più profonde.
+                    Siamo cresciuti in una casa in campagna, ma senza alcuna tradizione contadina in famiglia.
+                    <br>
+                    Da
+                    ragazzi, non eravamo interessati al lavoro dei campi, ci interessava la musica, la vita
+                    notturna,
+                    esplorare il mondo. Dopo gli studi, i viaggi, gli impieghi di vario genere, siamo ripartiti
+                    da
+                    zero.
+                </div>
+                <button *ngIf="!showMore" mat-stroked-button color="primary" (click)="showMore = !showMore"
+                    style="margin-top:16px">
+                    Continua a leggere</button>
+            </div>
+            <div class="my-4">
+                <img src="assets/images/img17.jpg" class="img-fluid" alt="xtreme-ang" />
+            </div>
+            <div class="padding-text" *ngIf="showMore"> Abbiamo cominciato a passare il tempo in campagna,
+                coltivando, mostrando a noi
+                stessi
+                come la
+                vita possa essere lenta e misurata, e non caotica, frenetica, senza direzioni. <br>
+                <strong>Fungaia</strong> nasce dalla ricerca di stabilità, semplicità, chiarezza, valori che noi abbiamo
+                trovato nel
+                contatto con la natura. All&#39;inizio, ci siamo dedicati a osservare la natura e i suoi tempi,
+                concentrarci
+                sui dettagli, riconoscere i segnali.
+                <br>Il lavoro ripetitivo e metodico dei campi, sotto il sole o
+                sotto la
+                pioggia, oltre a placare l&#39;agitazione della mente, lentamente, ci ha trasformati.
+                Nelle prime fasi abbiamo venduto i prodotti delle nostre coltivazioni, tra mille errori, alle
+                persone a
+                noi vicine. Siamo partiti mettendo in pratica le teorie di agricoltura naturale, preparando orti
+                sinergici, applicando i principi di permacultura e cercando di trovare il nostro modo per svolgere
+                questa professione.
+
+
+                Col passare degli anni e aumentando l&#39;esperienza sul campo, l&#39;attività ha
+                iniziato a ingrandirsi,
+                abbiamo meccanizzato certe pratiche e rivisto alcune tecniche, per velocizzare e rendere più
+                efficienti certe operazioni. È rimasto centrale l&#39;obbiettivo di migliorare la salute e la
+                fertilità
+                della
+                terra, dell’ambiente e degli esseri viventi, per questo non usiamo fertilizzanti né pesticidi di
+                sintesi o
+                diserbanti, e prestiamo attenzione a ridurre al minimo l’emissione di gas serra, lo spreco d’acqua e
+                la produzione di rifiuti.
+                <br> Pur continuando a privilegiare metodiche manuali e lavorazioni a basso
+                impatto ambientale, l&#39;azienda è cresciuta, arrivando col tempo alle dimensioni attuali che
+                permettono a due persone di lavorare a tempo pieno, ricavandone il proprio sostentamento.
+                Vivere di agricoltura oggi non è facile. Le leggi del mercato e i ritmi che la società ci impone ci
+                condizionano inevitabilmente. Facciamo ogni giorno uno sforzo per restare in equilibrio,
+                concentrandoci sui nostri obiettivi e cercando di essere flessibili, considerando le esigenze del
+                mercato. Come sempre, la vita nella natura ci aiuta, ricordandoci che tutto è ciclico e in ogni caos
+                c&#39;è un ordine.
+            </div>
+            <button *ngIf="showMore" mat-stroked-button color="primary" (click)="showMore = !showMore">
+                Riduci</button>
+
+
+
+            <div>
+                <div class="horizontal-container">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.header{
+    height: 20vh;
+}
+
+
+
+.showSmall{
+    display:none;
+}
+
+
+@media screen and (max-width: 992px) {
+  
+.showSmall{
+    display:block;
+}  
+}
